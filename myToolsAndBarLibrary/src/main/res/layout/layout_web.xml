@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/top_panel_detail" />
+
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:clickable="false"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_bar_states" />
+
+    <include
+        layout="@layout/list_empty_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/webviewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#313944"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/page_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:onClick="goBackClick"
+            android:padding="10dp"
+            android:src="@drawable/icon_web_back_normal" />
+
+        <ImageView
+            android:id="@+id/page_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/page_back"
+            android:onClick="goForwardClick"
+            android:padding="10dp"
+            android:src="@drawable/icon_web_forward_normal" />
+
+        <ImageView
+            android:id="@+id/page_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:onClick="goRefreshClick"
+            android:padding="10dp"
+            android:src="@drawable/icon_web_refresh" />
+    </RelativeLayout>
+
+</LinearLayout>

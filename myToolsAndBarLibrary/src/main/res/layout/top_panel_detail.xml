@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topview"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/top_btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:drawableLeft="@drawable/back_black"
+        android:drawablePadding="4dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/top_btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawablePadding="4dp"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:background="@null" />
+    <ImageView
+        android:id="@+id/top_iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null" />
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="18sp" />
+</RelativeLayout>
