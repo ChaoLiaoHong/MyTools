@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <com.ldh.mytools.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:id="@+id/scrollview">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/img_head_default" />
+    </com.ldh.mytools.view.MyScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_zoom_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="放大" />
+
+        <Button
+            android:id="@+id/btn_zoom_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缩小" />
+    </LinearLayout>
+</LinearLayout>

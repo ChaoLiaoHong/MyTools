@@ -1,0 +1,25 @@
+<resources>
+    //****************初始布局及fragment和Activity需要的文字来源开始*****************
+    <string name="app_name">MyTools</string>
+    <string name="home">首页</string>
+    <string name="shopping">购物</string>
+    <string name="circle">圈子</string>
+    <string name="me">我的</string>
+    <string name="head_title">实现ListView的自动滚动效果</string>
+    //****************初始需要的文字来源结束*****************
+    //****************初始dp,sp标注开始**********************
+    <dimen name="dp0">0dp</dimen>
+    <dimen name="dp0.5">0.5dp</dimen>
+    <dimen name="dp1">1dp</dimen>
+    <dimen name="dp2.5">2.5dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp24">24dp</dimen>
+    <dimen name="dp48">48dp</dimen>
+    <dimen name="dp205">205dp</dimen>
+    <dimen name="dp96">96dp</dimen>
+    <dimen name="dp70">70dp</dimen>
+    <dimen name="sp14">14sp</dimen>
+    //****************初始dp,sp标注结束**********************
+    <string name="title_activity_style_classics">经典风格</string>
+</resources>

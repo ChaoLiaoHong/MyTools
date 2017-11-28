@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //这里是设置布局及fragment和Activity要用的颜色
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="tran">#00000000</color>
+    <color name="blank">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="c_cccccc">#CCCCCC</color>
+    <color name="c_white">#FFFFFFFF</color>
+    <color name="c_red">#FF0000</color>
+    <color name="c_f6f6f6">#F6F6F6</color>
+    <color name="colorTextAssistant">#888888</color>
+</resources>

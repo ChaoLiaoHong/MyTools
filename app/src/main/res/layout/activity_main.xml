@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.ldh.barlibrary.views.NoScrollViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:background="@color/c_cccccc" />
+
+    <RadioGroup
+        android:id="@+id/mRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/c_white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mHome"
+            style="@style/MainActivityRadioButton"
+            android:checked="true"
+            android:drawableTop="@mipmap/ico_hone_selected"
+            android:text="@string/home" />
+
+        <RadioButton
+            android:id="@+id/mShopping"
+            style="@style/MainActivityRadioButton"
+            android:drawableTop="@mipmap/gouwu"
+            android:text="@string/shopping" />
+
+        <RadioButton
+            android:id="@+id/mCircle"
+            style="@style/MainActivityRadioButton"
+            android:drawableTop="@mipmap/ico_quanzi_selected"
+            android:text="@string/circle" />
+
+        <RadioButton
+            android:id="@+id/mMe"
+            style="@style/MainActivityRadioButton"
+            android:drawableTop="@mipmap/wode"
+            android:text="@string/me" />
+    </RadioGroup>
+
+</LinearLayout>
